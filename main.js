@@ -11,7 +11,7 @@ $(document).ready(function(){
     function getWeather(position){
         let lat = position.coords.latitude;
         let long = position.coords.longitude;
-        let API_KEY = '74d8ecab1addd3b1eb16d0277ce94ce8';
+        let API_KEY = '';
         let baseURL = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${API_KEY}`;
 
         $.get(baseURL,function(res){
